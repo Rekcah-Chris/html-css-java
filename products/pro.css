@@ -1,0 +1,311 @@
+/*Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+	--main-color: #d90429;
+	--text-color: #020102;
+	--big-color: #fff;
+	--blue: #0000ff;
+	--border: #330000;
+	--hover1: #99ff33;
+	--hover2: #ffff99;
+	--hover3: #fbfbf0;
+}
+/*Custom Scroll Bar*/
+html::-webkit-scrollbar {
+	width: 0.5rem;
+	background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+	border-radius: 5rem;
+	background: var(--text-color);
+}
+section {
+	padding: 4rem 0 2rem;
+}
+img {
+	width: 100%;
+}
+body {
+	color: var(--text-color);
+}
+.container {
+	max-width: 1068px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header {
+display: block;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+/*background: powderblue;*/
+}
+header.shadow {
+	background: var(--big-color);
+	box-shadow: 2px 4px 4px rgb(15, 54, 55 / 20%);
+	transition: 0.5s ease;
+}
+header.shadow #search-icon {
+	color: var(--text-color);
+}
+
+#menu-icon {
+	font-size: 20px;
+	cursor: pointer;
+	color: var(--text-color);
+	display: none;
+}
+.logo {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: var(--text-color);
+}
+.logo span {
+	color: var(--main-color);
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.4rem;
+	background: lightyellow;
+}
+.navbar {
+	display: flex;
+	column-gap: 0.1rem;
+	position: sticky;
+}
+.navbar {
+	list-style: none;
+	display: flex;
+}
+.navbar li {
+	padding: 5px 15px;
+	position: relative;	
+}
+.navbar li a {
+	color: var(--text-color);
+	font-size: 13px;
+	text-transform: uppercase; 
+	font-weight: 500;
+	text-decoration: none;
+	transition: all 0s;
+}
+.active, .navbar li:hover {
+	color: var(--main-color);
+	border-bottom: 3px solid var(--main-color);
+	transition: all 0.3s;
+}
+.navbar .fa {
+	float: left;
+	margin-right: 8px;
+	padding-top: 3px;
+}
+h1{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 2rem;
+	letter-spacing: 0.5rem;
+	padding: 2rem 0 1rem;
+	color: var(--text-color);
+	text-align: center;
+}
+.social-media {
+	display: flex;
+	justify-content: center;
+}
+.social-media a {
+	display: flex;
+	height: 55px;
+	width: 55px;
+	margin: 0 2rem;
+	border-radius: 0.5rem;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+	border: 0.1rem solid var(--hover3);
+	transition: transform 0.2s;
+	cursor: pointer;
+}
+.social-media a i {
+	font-size: 2rem;
+	color: #777;
+	transition: transform 0.2s;
+	cursor: pointer;
+}
+.social-media a:hover {
+	box-shadow: var(--blue);
+	border: 0.1rem solid var(--main-color);
+	transform: translateY(0.2rem);
+}
+.social-media a i:hover {
+	transform: scale(0.90);
+}
+
+.social-media a .fa-facebook:hover  {
+	color: #3b5998;
+}
+.social-media a .fa-whatsapp:hover  {
+	color: #4fce5d;
+}
+.social-media a .fa-twitter:hover  {
+	color: #00acee;
+}
+.social-media a .fa-instagram:hover  {
+	color: #f14843;
+}
+.social-media a .fa-youtube:hover  {
+	color: #f00;
+}
+.social-media a .fa-linkedin:hover  {
+	color: darkblue;
+}
+/*vehicle details*/
+.views .row{
+	display: inline-flex;
+	gap: 1.5rem;
+	border: .1rem solid var(--border);
+	border-radius: .5rem;
+	background: var(--hover3);
+	padding: 2rem;
+	align-items: center;
+	margin: 1.5rem 0;
+}
+.views .row .content{
+	flex: 1 1 40rem;
+}
+.views .row .image-container{
+	 display: flex;
+	 gap: 1.5rem;
+	 align-items: center;
+	 flex: 1 1 50rem;
+}
+.views .row .image-container .small-image{
+	width: 20%;
+}
+.views .row .image-container .big-image{
+	width: 80%;
+	height: 100%;
+	padding: 1rem;
+}
+.views .row .image-container .small-image img{
+	width: 100%;
+	padding: 1rem;
+	border: .1rem solid var(--main-color);
+	cursor: pointer;
+}
+.views .row .image-container .small-image img:hover{
+	background: lightyellow;
+}
+.views .row .image-container .big-image img{
+	width: 100%;
+	border: .1rem solid var(--main-color);
+	cursor: pointer;
+	padding: 1rem;
+}
+.views .row .image-container .big-image img:hover{
+	transform: scale(0.1s);
+}
+.views .row .content h3{
+	font-size: 2.5rem;
+	color: var(--text-color);
+	display: flex;
+}
+.views .row .content p{
+	font-size: 1.5rem;
+	color: var(--text-color);
+	padding: 1rem 0;
+}
+.views .row .content .button {
+	font-size: 2.5rem;
+	color: var(--hover2);
+}
+.views .row .content .price .button {
+	font-size: 2.5rem;
+	color: var(--text-color);
+	font-weight: bolder;
+}
+.views .row .content .price .button span{
+	font-size: 1.5rem;
+	color: var(--main-color);
+	text-decoration: line-through;
+	display: flex;
+
+}
+.car-specs {
+	background: url(images/sales.jpg) no-repeat left;
+	background-size: 55%;
+	/*background-color: var(--hover2);*/
+	overflow: hidden;
+	padding: 50px 0;
+}
+.inner-container{
+	width: 45%;
+	float: right;
+	background-color: lightyellow;
+	padding: 50px 0;
+}
+.inner-container h1{
+	margin-bottom: 2px;
+	font-size: 20px;
+	font-weight: 800;
+}
+.inner-container .table-box{
+	margin: 50px auto;
+}
+.inner-container .table-row{
+	display: table;
+	width: 80%;
+	margin: 10px auto;
+	font-family: sans-serif;
+	background: transparent;
+	padding: 12px 0;
+	color: #555;
+	font-size: 13px;
+	box-shadow: var(--main-color);
+}
+.inner-container .table-cell{
+	display: table-cell;
+	width: 30%;
+	text-align: center;
+	padding: 4px 0;
+	border-right: 1px solid var(--main-color);
+	vertical-align: middle;
+}
+.inner-container .table-head{
+	background: var(--hover2);
+	box-shadow: none;
+	color: var(--text-color);
+	font-weight: 600;
+}
+.inner-container .table-head .table-cell{
+	border-right: none;
+}
+.inner-container .last-cell{
+	border-right: none;
+}
+.inner-container .table-cell .first-cell{
+	text-align: left;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
